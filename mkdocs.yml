@@ -1,44 +1,52 @@
-site_name: Documentation Template
+site_name: Learning path for Browmix
 site_description: >-
-    Documentation is an integral part of any project. This template is a good starting point for your documentation.
-site_url: https://ibm.github.io/mkdocs-oc-pipeline/docs
-site_author: Enter Author Name
-repo_url: https://github.com/IBM/mkdocs-oc-pipeline
+    Learning materials for Browmix Development
+site_url: https://Akrivis-Business-Solutions.github.io/react-documentation
+site_author: Akrivis
+repo_url: https://github.com/Akrivis-Business-Solutions/react-documentation
 docs_dir: docs
 site_dir: site
 edit_uri: edit/master/docs
 
 theme:
-    name: material
-    palette:
-        - media: "(prefers-color-scheme: dark)"
-          scheme: slate
-          toggle:
-              icon: material/toggle-switch-off-outline
-              name: Switch to light mode
-          primary: cyan
-          accent: yellow
-        - media: "(prefers-color-scheme: light)"
-          scheme: default
-          toggle:
-              icon: material/toggle-switch
-              name: Switch to dark mode
-          primary: indigo
-          accent: deep purple
-    font:
-        text: IBM Plex Sans
-        code: IBM Plex Mono
-    language: en
-    features:
-        - navigation.instant
-        - navigation.tracking
-use_directory_urls: true
-plugins:
-    - search:
-          lang: en
-    - minify:
-          minify_html: true
-    - mkdocs_pymdownx_material_extras:
+  name: material
+  features:
+    - toc.integrate
+    - navigation.top
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: brown
+      accent: orange 
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: brown
+      accent: orange 
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    name: montserrat
+    url: https://fonts.googleapis.com/css?family=Montserrat:400,700
+
+  icon:
+    admonition:
+      note: material/adb
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://linkedin.com/manojjahgirdar
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/iam_manojjag
+    - icon: fontawesome/brands/github
+      link: https://github.com/manojjahgirdar
+copyright: This GitHub pages is maintained by <a href="https://github.com/manojjahgirdar"> <b> Manoj Jahgirdar.</b></a>
+repo_url: https://github.com/manojjahgirdar/docker-kubernetes-workshop
+repo_name: Goto GitHub Repository
 
 extra_css:
   - https://unpkg.com/mermaid@8.5.1/dist/mermaid.css
@@ -46,28 +54,23 @@ extra_javascript:
   - https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js
 
 markdown_extensions:
-    - attr_list
-    - admonition
-    - toc:
-          permalink: true
-          toc_depth: 3
-    - pymdownx.superfences:
-          custom_fences:
-              - name: diagram
-                class: diagram
-                format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.highlight
-    - pymdownx.tabbed
-    - pymdownx.details
-    - pymdownx.arithmatex:
-          generic: true
-extra_javascript:
-    - https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js
-    - https://polyfill.io/v3/polyfill.min.js?features=es6
-    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-extra:
-    generator: false
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
 
 
 nav:
     - Home: index.md
+    - React Table: react-table.md
