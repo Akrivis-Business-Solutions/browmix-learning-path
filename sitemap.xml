@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://Akrivis-Business-Solutions.github.io/react-documentation/</loc>
+         <loc>https://Akrivis-Business-Solutions.github.io/browmix-learning-path/</loc>
          <lastmod>2022-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Akrivis-Business-Solutions.github.io/react-documentation/react-route/</loc>
+         <loc>https://Akrivis-Business-Solutions.github.io/browmix-learning-path/react-route/</loc>
          <lastmod>2022-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Akrivis-Business-Solutions.github.io/react-documentation/react-table/</loc>
+         <loc>https://Akrivis-Business-Solutions.github.io/browmix-learning-path/react-table/</loc>
          <lastmod>2022-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
